@@ -1,0 +1,336 @@
+.novisible{
+		border:none;
+		background-color:transparent;
+		width:100%;
+}
+.navbar-inverse{
+	background:#FFFFFF;
+} 
+.nav-side-menu {
+  overflow: auto;
+  font-family: verdana;
+  font-size: 13px;
+  font-weight: 200;
+  background-color: #005747;
+  position: fixed;
+  top: 0px;
+  width: 16%;
+  height: 100%;
+  color: #e1ffff;
+  z-index: 999;
+}
+.nav-side-menu .brand {
+  background-color: #23282e;
+  line-height: 50px;
+  display: block;
+  text-align: center;
+  font-size: 8px;
+}
+.nav-side-menu .toggle-btn {
+  display: none;
+}
+.nav-side-menu ul,
+.nav-side-menu li {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+  line-height: 35px;
+  cursor: pointer;
+  /*    
+    .collapsed{
+       .arrow:before{
+                 font-family: FontAwesome;
+                 content: "\f053";
+                 display: inline-block;
+                 padding-left:10px;
+                 padding-right: 10px;
+                 vertical-align: middle;
+                 float:right;
+            }
+     }
+*/
+}
+.nav-side-menu ul :not(collapsed) .arrow:before,
+.nav-side-menu li :not(collapsed) .arrow:before {
+  font-family: FontAwesome;
+  content: "\f078";
+  display: inline-block;
+  padding-left: 10px;
+  padding-right: 10px;
+  vertical-align: middle;
+  float: right;
+}
+.nav-side-menu ul .active,
+.nav-side-menu li .active {
+  border-left: 3px solid #d19b3d;
+  background-color: #4f5b69;
+}
+.nav-side-menu ul .sub-menu li.active,
+.nav-side-menu li .sub-menu li.active {
+  color: #d19b3d;
+}
+.nav-side-menu ul .sub-menu li.active a,
+.nav-side-menu li .sub-menu li.active a {
+  color: #d19b3d;
+}
+.nav-side-menu ul .sub-menu li,
+.nav-side-menu li .sub-menu li {
+  background-color: #8a8a8a;
+  border: none;
+  line-height: 28px;
+  border-bottom: 1px solid #23282e;
+  margin-left: 0px;
+}
+.nav-side-menu ul .sub-menu li:hover,
+.nav-side-menu li .sub-menu li:hover {
+  background-color: #020203;
+}
+.nav-side-menu ul .sub-menu li:before,
+.nav-side-menu li .sub-menu li:before {
+  font-family: FontAwesome;
+  content: "\f105";
+  display: inline-block;
+  padding-left: 10px;
+  padding-right: 10px;
+  vertical-align: middle;
+}
+.nav-side-menu li {
+  padding-left: 0px;
+  border-left: 3px solid #2e353d;
+  border-bottom: 1px solid #23282e;
+}
+.nav-side-menu li a {
+  text-decoration: none;
+  color: #e1ffff;
+}
+.nav-side-menu li a i {
+  padding-left: 10px;
+  width: 20px;
+  padding-right: 20px;
+}
+.nav-side-menu li:hover {
+  border-left: 3px solid #d19b3d;
+  background-color: #4f5b69;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  transition: all 1s ease;
+}
+@media (max-width: 767px) {
+  .nav-side-menu {
+    position: relative;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .nav-side-menu .toggle-btn {
+    display: block;
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    z-index: 10 !important;
+    padding: 3px;
+    background-color: #ffffff;
+    color: #000;
+    width: 40px;
+    text-align: center;
+  }
+  .brand {
+    text-align: left !important;
+    font-size: 22px;
+    padding-left: 20px;
+    line-height: 50px !important;
+  }
+}
+@media (min-width: 767px) {
+  .nav-side-menu .menu-list .menu-content {
+    display: block;
+  }
+}
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+ul.recomendaciones{
+	list-style:none;
+}
+ul.recomendaciones li{
+	font-size:10px;
+	line-height:15px;
+	color:#000;
+}
+.recomendar{
+	font-size:14px;
+}
+.fa-asterisk{
+	color:#7BAE18;
+	margin-right:20px;
+}
+.fa-exclamation-triangle, .fa-info-circle{
+	color:rgb(177, 56, 8);
+}
+#login{
+	margin-top:5%;
+}
+#loginbtn{
+	background-color: #228766;
+}
+#loginbtn:hover{
+	background-color: #00f;
+}
+.logo{
+	margin:0 auto;
+}
+  /*
+ * error de formularios 
+ */
+.error{
+	color:#f00;
+}
+#nameUser{
+	font-weight:bold;
+	color:#088581;
+	padding:10px;
+}
+#pagePrimary, #pageSecond{
+	width: 83%;
+    margin-left: 17%;
+    padding-top: 5%;
+}
+.titleSectionP{
+    padding: 0px;
+}
+.titleSectionCE{
+	background: #5cb85c;
+    padding: 2px;
+    color: #fff;
+    font-size:2rem;
+    font-weight:bold;
+    font-style:italic;
+    font-family:"Book Antiqua";
+}
+
+.titleSectionC{
+	background: #04369a;
+    padding: 2px;
+    color: #fff;
+    font-size:2rem;
+    font-style:italic;
+    font-family:"Book Antiqua";
+}
+.titleSectionA{
+	background: #6bf1c4;
+    padding: 2px;
+    margin-bottom: 5px;
+    color: #04369A;
+    font-size:2rem;
+    font-style:italic;
+    font-family:"Book Antiqua";
+    border-bottom: 5px solid #04369A;
+}
+
+.titleSection{
+	background: #23282e;
+    padding: 2px;
+    color: #fff;
+    font-size:3rem;
+    font-style:italic;
+    font-family:"Book Antiqua";
+}
+.titlePanel{
+	padding: 0px;
+    background: #6bf1c4;
+    margin-bottom: 25px;
+    color: black;
+    border-bottom: 5px solid #04369A;
+}
+.modal-header{
+	background: #FFFFFF;
+	font-family:Helvetica,Arial,  sans-serif;
+	color: #090987;
+	font-weight:bold;
+	border-bottom: 5px solid #04369A;
+	padding:5px;
+}
+.modal-header .actividad{
+	
+}
+.modal-title{
+	font-weight:bold;
+}
+.clave{
+	position: absolute;
+	top: 0px;
+	right: 0px;
+
+}
+.reporteCurso>a,.notas>a,.actividades>a{
+	color:#000000;	
+}
+
+#oneSection,#twoSection,#threeSection,#fourSection,#twoSection1,#oneSection1,#fiveSection,#twoSectionC,#threeSectionC{
+	background:#FFFFFF;
+	margin-right:5px;;
+}
+.f1{
+	margin-bottom:15px;
+}
+.titleActivity{
+	background:#04369a;
+	color:#FFFFFF;
+	margin-bottom: 10px;
+}
+.titleActivityAd{
+	background:#005747;
+	color:#FFFFFF;
+	margin-bottom: 10px;
+}
+
+
+
+
+.titleActivityE{
+	background:#5cb85c;
+	color:#FFFFFF;
+	margin-bottom: 10px;
+}
+ @media only screen and (max-width: 480px) {
+	#pagePrimary,#pageSecond{
+			width: 100%;
+		    margin-left: 0%;
+		    padding-top: 5%;
+		}
+	.nav-side-menu .brand {
+		  background-color: #23282e;
+		  line-height: 50px;
+		  display: block;
+		  text-align: center;
+		  font-size:15px;
+		}
+	#oneSection,#twoSection,#threeSection,#fourSection,#twoSectionC,#threeSectionC{
+		background:#FFFFFF;
+		margin-right:3px;
+		margin-left:3px;
+	}	
+}
+ @media only screen and (max-width: 680px) {
+	#pagePrimary,#pageSecond{
+			width: 100%;
+		    margin-left: 0%;
+		    padding-top: 5%;
+		}
+	.nav-side-menu .brand {
+		  background-color: #23282e;
+		  line-height: 50px;
+		  display: block;
+		  text-align: center;
+		  font-size:15px;
+		}
+	#oneSection,#twoSection,#threeSection,#fourSection,#twoSectionC,#threeSectionC{
+		background:#FFFFFF;
+		margin-right:3px;
+		margin-left:3px;
+	}	
+}
